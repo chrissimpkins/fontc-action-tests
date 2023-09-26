@@ -20,5 +20,6 @@ jobs:
         with:
           source-path: test/Font.designspace
           args: "--help"
+          branch: go
 
     #  Comment to trigger test again
