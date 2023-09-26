@@ -1,0 +1,22 @@
+name: fontc on macOS Test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: macos-latest
+    name: macOS Test Run
+    steps:
+      - name: Check out source repository
+        uses: actions/checkout@v3
+      - name: Install latest stable Rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - name: Install and run fontc
+        uses: chrissimpkins/fontc-action
+        with:
+          source-path: test/Font.designspace
+          args: "--help"
