@@ -16,7 +16,7 @@ jobs:
         with:
           toolchain: stable
       - name: Install and run fontc
-        uses: chrissimpkins/fontc-action
+        uses: chrissimpkins/fontc-action@main
         with:
           source-path: test/Font.designspace
           args: "--help"
