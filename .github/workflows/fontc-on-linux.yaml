@@ -18,6 +18,6 @@ jobs:
       - name: Install fontc and compile fonts
         uses: chrissimpkins/fontc-action@main
         with:
-          source-path: test/Font.designspace
+          source-path: src/Oswald.glyphs
 
     #  Comment to trigger test again
