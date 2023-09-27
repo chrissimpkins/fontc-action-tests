@@ -19,5 +19,6 @@ jobs:
         uses: chrissimpkins/fontc-action@main
         with:
           source-path: src/Oswald.glyphs
+          args: --flatten-components
 
     #  Comment to trigger test again
