@@ -16,7 +16,7 @@ jobs:
         with:
           toolchain: stable
       - name: Install fontc and compile fonts
-        uses: chrissimpkins/fontc-action@main
+        uses: googlefonts/fontc-action@main
         with:
           source-path: src/Oswald.glyphs
           args: --flatten-components
