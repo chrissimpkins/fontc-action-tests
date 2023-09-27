@@ -15,11 +15,9 @@ jobs:
         uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
-      - name: Install and run fontc
+      - name: Install fontc and compile fonts
         uses: chrissimpkins/fontc-action@main
         with:
           source-path: test/Font.designspace
-          args: "--help"
-          commit-sha: a60f59e84f88f5b7f0e3e846a9d566870c7391ef
 
     #  Comment to trigger test again
